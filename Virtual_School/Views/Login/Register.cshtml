@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Virtual_School</title>
+    <link rel="stylesheet" href="~/css/Register.css">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-sacle=3.0, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c9fcfc148.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form action="/login/register" class="formulario" method="post">
+        <h1>Registrate</h1>
+        <div class="contenedor">
+            <div class="input-contendor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" name="name" placeholder="Usuario" />
+            </div>
+            <div class="input-contendor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" name="name" placeholder="Correo" />
+            </div>
+            <div class="input-contendor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" name="name" placeholder="Contraseña" />
+            </div>
+            <div class="input-contendor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" name="name" placeholder="Verificar Contraseña" />
+            </div>
+            <div>
+                <input type="submit" name="name" value="Registrarse" class="button" />
+            </div>
+            <p>Al registrarte, aceptas nuestras Condiciones y uso de Políticas de Privacidad</p>
+            <p>¿Ya tienes cuenta? <a class="link" href="/login/login">Iniciar Sesión</a></p>
+        </div>
+    </form>
+</body>
+</html>

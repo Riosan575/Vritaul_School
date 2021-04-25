@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual_School</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">
+                    <img src="https://previews.123rf.com/images/hayesnch/hayesnch1512/hayesnch151200247/49753987-ilustraci%C3%B3n-del-vector-del-tatuaje-del-drag%C3%B3n-chino-aislado-en-blanco.jpg" width="55" height="55">
+                </label>
+            </div>
+            <div class="logo">
+                <h1>Virtual_School</h1>
+            </div>
+            <nav class="menu">
+                <a class="register" href="#">Register</a>
+                <a href="#">Login</a>
+            </nav>
+            <!--- Lista desplegable--->
+            <div id="header1">
+                <ul class="nav">
+                    <li>
+                        <a id="categoria" href="#">Categorias +</a>
+                        <ul class="lista">
+                            <li>
+                                <a href="#">tamaño de ancho borde</a>
+                                <ul class="sublista">
+                                    <li><a href="#">subSubmenu1</a></li>
+                                    <li><a href="#">subSubmenu2</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>
+                                    <li><a href="#">subSubmenu4</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Submenu2</a>
+                                <ul class="sublista">
+                                    <li><a href="#">subSubmenu1</a></li>
+                                    <li><a href="#">subSubmenu2</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Submenu3</a>
+                                <ul class="sublista">
+                                    <li><a href="#">subSubmenu1</a></li>
+                                    <li><a href="#">subSubmenu2</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Submenu4</a>
+                                <ul class="sublista">
+                                    <li><a href="#">subSubmenu1</a></li>
+                                    <li><a href="#">subSubmenu2</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!---aca termina la lista :v-->
+            <div class="buscador">
+                <label for="Buscar"><i class="fas fa-search"></i></label>
+                <input type="search" id="Buscar" size="30" placeholder="Buscar" />
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>
