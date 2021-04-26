@@ -8,17 +8,16 @@ using Virtual_School.Models;
 
 namespace Virtual_School.DB.Mapping
 {
-    public class CursoMap: IEntityTypeConfiguration<Curso>
+    public class ContenidoCursoMap: IEntityTypeConfiguration<ContenidoCurso>
     {
-        public void Configure(EntityTypeBuilder<Curso> builder)
+        public void Configure(EntityTypeBuilder<ContenidoCurso> builder)
         {
-            builder.ToTable("Curso");
+            builder.ToTable("ContenidoCurso");
             builder.HasKey(o => o.Id);
 
-
-            //builder.HasOne(o => o.contenido)
-            //    .WithOne(o => o.)
-            //    .HasForeignKey(o => o.);
+            //builder.HasOne(o => o.Cursos)
+            //   .WithOne(o => o.contenido)
+            //   .HasForeignKey(o => o);
         }
     }
 }

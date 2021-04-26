@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #1D1B1A;
     background-repeat: no-repeat;
     background-size: 130vw 150vh;
 }
@@ -17,7 +17,7 @@ body {
     position: fixed;
     top: -10px;
     left: 0;
-    background-color: #111111;
+    background-color: black;
     position: fixed;
     z-index: 10;
     top: 0;
@@ -45,12 +45,12 @@ body {
         }
 
         .logo h1 {
-            color: rgb(255, 255, 255);
+            color: rgb(165, 165, 165);
             font-size: 30px;
             margin-left: 10px;
             font-family: fantasy;
-            margin-left: -20px;
-            line-height: 75px;
+            margin-left: -40px;
+            line-height: 5px;
             font-weight: 300;
         }
 
@@ -133,6 +133,7 @@ ul, ol {
 }
 
 .nav li ul {
+    text-align: left;
     display: none;
     position: absolute;
     min-width: 140px;
@@ -254,6 +255,15 @@ main .contenido1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 25px;
+}
+.letras {
+    text-align: left;
+    white-space: pre-line;
+}
+.titulo {
+    text-align: left;
+    color: #D5B8B2;
+    white-space: pre-line;
 }
 
     .txt:hover {
@@ -398,7 +408,7 @@ main .contenido1 {
     position: absolute;
     color: white;
     line-height: 10px;
-    margin-top: -80px;
+    margin-top: -70px;
     left: 100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
@@ -456,4 +466,103 @@ main .contenido1 {
 
 .Cursos .inscribirse {
     margin-right: -180px;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+    position: relative;
+}
+
+.carousel__anterior {
+    position: absolute;
+    display: block;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    opacity: 20%;
+    color: #fff;
+}
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    opacity: 20%;
+    color: #fff;
+}
+
+.carousel__anterior:hover {
+    opacity: 100%;
+}
+
+.carousel__siguiente:hover 
+{
+    opacity: 100%;
+}
+
+.carousel__lista {
+    overflow: hidden;
+}
+
+.carousel__elemento {
+    text-align: center;
+    margin: 16px;
+}
+
+.carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 0;
+}
+
+    .carousel__indicadores .glider-dot:hover {
+        opacity: .5;
+    }
+
+    .carousel__indicadores .glider-dot.active {
+        opacity: 1;
+    }
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 40px 0;
+    }
+
+    .contenido-principal {
+        flex-direction: column;
+    }
+
+        .contenido-principal > * {
+            width: 100%;
+        }
+}
+.rounded{
+    height: 400px;
+    margin-top: -280px;
+    left: 350px;
+}
+.color {
+    color: white;
+    margin: 30px;
+}
+.textarea {
+    margin-right: 500px;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }

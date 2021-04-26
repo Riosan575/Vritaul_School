@@ -8,58 +8,69 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <div class="btn-menu">
-                <label for="btn-menu">
-                    <img src="https://previews.123rf.com/images/hayesnch/hayesnch1512/hayesnch151200247/49753987-ilustraci%C3%B3n-del-vector-del-tatuaje-del-drag%C3%B3n-chino-aislado-en-blanco.jpg" width="55" height="55">
-                </label>
-            </div>
             <div class="logo">
-                <h1>Virtual_School</h1>
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"><h1>Virtual School</h1></a>
             </div>
             <nav class="menu">
-                <a class="register" href="#">Register</a>
-                <a href="#">Login</a>
+                <a class="register" href="/login/register">Register</a>
+                <a href="/login/login">Login</a>
             </nav>
             <!--- Lista desplegable--->
             <div id="header1">
                 <ul class="nav">
                     <li>
-                        <a id="categoria" href="#">Categorias +</a>
+                        <a id="categoria" href="#">Categorías</a>
                         <ul class="lista">
                             <li>
-                                <a href="#">tamaño de ancho borde</a>
+                                <a href="#">Dessarrollo</a>
                                 <ul class="sublista">
-                                    <li><a href="#">subSubmenu1</a></li>
+                                    @*<li><a href="#">subSubmenu1</a></li>
                                     <li><a href="#">subSubmenu2</a></li>
                                     <li><a href="#">subSubmenu3</a></li>
-                                    <li><a href="#">subSubmenu4</a></li>
+                                    <li><a href="#">subSubmenu4</a></li>*@
 
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Submenu2</a>
+                                <a href="#">Negocios</a>
                                 <ul class="sublista">
-                                    <li><a href="#">subSubmenu1</a></li>
+                                    @*<li><a href="#">subSubmenu1</a></li>
                                     <li><a href="#">subSubmenu2</a></li>
-                                    <li><a href="#">subSubmenu3</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Submenu3</a>
+                                <a href="#">Finanzas y Contabilidad</a>
                                 <ul class="sublista">
-                                    <li><a href="#">subSubmenu1</a></li>
+                                    @*<li><a href="#">subSubmenu1</a></li>
                                     <li><a href="#">subSubmenu2</a></li>
-                                    <li><a href="#">subSubmenu3</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Submenu4</a>
+                                <a href="#">Informatica y Software</a>
                                 <ul class="sublista">
-                                    <li><a href="#">subSubmenu1</a></li>
+                                    @*<li><a href="#">subSubmenu1</a></li>
                                     <li><a href="#">subSubmenu2</a></li>
-                                    <li><a href="#">subSubmenu3</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Productividad en la Oficina</a>
+                                <ul class="sublista">
+                                    @*<li><a href="#">subSubmenu1</a></li>
+                                    <li><a href="#">subSubmenu2</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Diseño</a>
+                                <ul class="sublista">
+                                    @*<li><a href="#">subSubmenu1</a></li>
+                                    <li><a href="#">subSubmenu2</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
                                 </ul>
                             </li>
 

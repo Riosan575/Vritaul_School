@@ -12,18 +12,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/site.css">
-    <title>Virtual_School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <title>Virtual School</title>
+    <link rel="shortcut icon" href="https://st2.depositphotos.com/2877797/8963/v/950/depositphotos_89636676-stock-illustration-symbol-competition-vs-vector-illustration.jpg">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="btn-menu">
-                <label for="btn-menu">
-                    <img src="https://previews.123rf.com/images/hayesnch/hayesnch1512/hayesnch151200247/49753987-ilustraci%C3%B3n-del-vector-del-tatuaje-del-drag%C3%B3n-chino-aislado-en-blanco.jpg" width="55" height="55">
-                </label>
-            </div>
             <div class="logo">
-                <h1>Virtual_School</h1>
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"><h1>Virtual School</h1></a>
             </div>
             <nav class="menu">
                 <a class="register" href="/login/register">Register</a>
@@ -33,40 +32,56 @@
             <div id="header1">
                 <ul class="nav">
                     <li>
-                        <a id="categoria" href="#">Categorias +</a>
+                        <a id="categoria" href="#">Categorías</a>
                         <ul class="lista">
                             <li>
-                                <a href="#">tamaño de ancho borde</a>
+                                <a href="#">Dessarrollo</a>
                                 <ul class="sublista">
-                                    <li><a href="#">subSubmenu1</a></li>
+                                    @*<li><a href="#">subSubmenu1</a></li>
                                     <li><a href="#">subSubmenu2</a></li>
                                     <li><a href="#">subSubmenu3</a></li>
-                                    <li><a href="#">subSubmenu4</a></li>
+                                    <li><a href="#">subSubmenu4</a></li>*@
 
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Submenu2</a>
+                                <a href="#">Negocios</a>
                                 <ul class="sublista">
-                                    <li><a href="#">subSubmenu1</a></li>
+                                    @*<li><a href="#">subSubmenu1</a></li>
                                     <li><a href="#">subSubmenu2</a></li>
-                                    <li><a href="#">subSubmenu3</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Submenu3</a>
+                                <a href="#">Finanzas y Contabilidad</a>
                                 <ul class="sublista">
-                                    <li><a href="#">subSubmenu1</a></li>
+                                    @*<li><a href="#">subSubmenu1</a></li>
                                     <li><a href="#">subSubmenu2</a></li>
-                                    <li><a href="#">subSubmenu3</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Submenu4</a>
+                                <a href="#">Informatica y Software</a>
                                 <ul class="sublista">
-                                    <li><a href="#">subSubmenu1</a></li>
+                                    @*<li><a href="#">subSubmenu1</a></li>
                                     <li><a href="#">subSubmenu2</a></li>
-                                    <li><a href="#">subSubmenu3</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Productividad en la Oficina</a>
+                                <ul class="sublista">
+                                    @*<li><a href="#">subSubmenu1</a></li>
+                                    <li><a href="#">subSubmenu2</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Diseño</a>
+                                <ul class="sublista">
+                                    @*<li><a href="#">subSubmenu1</a></li>
+                                    <li><a href="#">subSubmenu2</a></li>
+                                    <li><a href="#">subSubmenu3</a></li>*@
                                 </ul>
                             </li>
 
@@ -84,7 +99,7 @@
     <main>
         <section class="contenido1">
             <figure id="imagen1">
-                <img src="https://www.10wallpaper.com/wallpaper/1920x1080/1112/long_road_ahead-Beautiful_natural_scenery_desktop_wallpaper_1920x1080.jpg" alt="No Carga la Imagen ps">
+                <img src="https://www.xtrafondos.com/wallpapers/paisaje-digital-en-atardecer-5846.jpg" alt="No Carga la Imagen ps">
             </figure>
             <div class="txt">
                 <h1>Lorem</h1>
@@ -107,7 +122,6 @@
                     TOMAR EXAMEN
                 </a>
                 <div class="examentxt">
-                    <h2>Lorem</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Laboriosam voluptate quod ipsa sed soluta aperiam aliquam
@@ -120,58 +134,69 @@
             </div>
         </section>
         <section class="linea2"><p>Cursos Online:</p></section>
-        @*<section class="contenido3">
-                <article class="Cursos">
-                    <figure><img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg" alt="No carga la imagen ps" width="400" height="343"></figure>
-                    <p class="curso1">Estratégia para poder lograr avanzar en tu negocio</p>
-                    <p class="relleno">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio consectetur asperiores, sint sapiente numquam quasi blanditiis exercitationem quo laborum. Dicta, nam? Assumenda voluptatem vel porro quasi minus fugiat in tempore!<a href="#">...más informacion</a>
-                    </p>
-                    <a href="#" class="inscribirse">Inscribirse</a>
-                    <a href="#" class="informacion">Saber más</a>
-                </article>
-            </section>*@
-    </main>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            @foreach (var item in Model)
-            {
-                if (item.Id == 1)
-                {
-                    <div class="carousel-item active">
-                        <a href="/home/detalle"><img src="@item.Caratula" height="200"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>@item.Nombre</h5>
-                            <p>Ven aprender</p>
-                        </div>
-                    </div>
-                }
-                else
-                {
-                    <div class="carousel-item">
-                        <a href="/home/detalle"><img src="@item.Caratula" height="200"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>@item.Nombre</h5>
-                                <p>Ven aprender</p>
+        <div class="contenedor">
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel__lista col-11">
+                        @foreach (var item in Model)
+                        {
+                            <div class="carousel__elemento">
+                                <a href="/home/detalle/@item.Id"><img src="@item.Caratula" class="pb-3" height="170"></a>
+                                <h4 class="titulo">@item.NombreCurso</h4>
+                                <p class="text-light letras">Por: @item.NombreProfesor</p>
+                                <p class="text-light letras">@item.Detalle</p>
                             </div>
-</div>
-                }
-            }
+                        }
+                    </div>
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div role="tablist" class="carousel__indicadores"></div>
+
+            </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+    </main>
+    <footer class="site-footer">
+        <div class="contenedor clearfix">
+            <div class="footer-informacion">
+                <h3>Sobre <span>Virtual School</span></h3>
+                <p>
+                    Somos su conexión virtual a las conferencistas más destacadas y renombradas de Perú, Latinoamérica y el Mundo. Actualmente, 
+                    abarcamos el continente americano acercando las mentes más brillantes de todo el mundo a las 
+                    empresas e instituciones que buscan una figura sobresaliente para sus eventos privados y corporativos. 
+                    Contamos con más de 10 cursos de una gran variedad de disciplinas centradas únicamente en tecnologías.
+                    En VIRTUAL SCHOOL tenemos los mejores cursos para que aprenda de la mejor manera.
+                </p>
+            </div>
+            <div class="menu">
+                <h3>Redes <span>sociales</span></h3>
+                <nav class="redes-sociales">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa fa-youtube-play"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+
+                </nav>
+            </div>
+        </div>
+
+        <p class="copyright">
+            © 2021 VIRTUAL SCHOOL - TODOS LOS DERECHOS RESERVADOS - <a href="#">POLÍTICA DE PRIVACIDAD</a>
+        </p>
+
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="~/js/sites.js"></script>
 </body>
 </html>

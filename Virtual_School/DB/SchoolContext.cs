@@ -11,6 +11,7 @@ namespace Virtual_School.DB
     public class SchoolContext: DbContext
     {
         public DbSet<Curso> Cursos { get; set; }
+        public DbSet<ContenidoCurso> Contenidos { get; set; }
         public SchoolContext(DbContextOptions<SchoolContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -18,6 +19,7 @@ namespace Virtual_School.DB
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new CursoMap());
+            modelBuilder.ApplyConfiguration(new ContenidoCursoMap());
         }
     }
 }
